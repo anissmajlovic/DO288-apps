@@ -5,6 +5,10 @@
 #: Section A.1: Red Hat OpenShift Development II: Building Kubernetes Applications
 #: Section A.2: Orientation to the Classroom Environment
 #: Section A.3: Controlling Your Systems
+mv ~/Downloads/rht_classroom.rsa ~/.ssh/
+chmod 0600 ~/.ssh/rht_classroom.rsa
+ssh-add ~/.ssh/rht_classroom.rsa
+ssh -i ~/.ssh/rht_classroom.rsa -J cloud-user@159.135.163.8:22022 student@172.25.252.1 -p 53009
 #: Chapter 1: Deploying and Managing Applications on an OpenShift Cluster
 #: Section 1.1: Introducing OpenShift Container Platform 4
 #: Section 1.2: Quiz: Introducing OpenShift 4
