@@ -8,4 +8,5 @@
 #
 
 # Run the app
+echo "EXEC APP ANIS:"
 exec /opt/app-root/app --lang
